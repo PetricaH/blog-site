@@ -71,13 +71,21 @@
                                 </td>
                                 <td><?php echo $admin['role']; ?></td>
                                 <td>
-                                    <a href="users.php?delete-admin=<?php echo $admin['id'] ?>" class="fa fa-trash btn delete">
+                                    <a class="fa fa-pencil btn edit"
+                                        href="users.php?delete-admin=<?php echo $admin['id'] ?>" class="fa fa-trash btn delete">
                                     </a>
                                 </td>
+                                <td>
+                                    <a class="fa fa-trash btn delete"
+                                        href="users.php?delete-admin=<?php echo $admin['id'] ?>"></a>
+                                </td>
                             </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
+            <?php endif ?>
             </div>
-            
+            <!-- // display records from DB -->
     </div>
 </body>
+</html>
