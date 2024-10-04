@@ -168,3 +168,110 @@ th {
 }
 
 /* PAGE CONTENT STYLING FOR MAKING IT LOOK PRITIIIIi */
+.container.content .menu {
+    width: 16%;
+    float: left;
+    padding: 40px 10px;
+}
+
+.container.content .menu .card .card-header h2 {
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px 3px 0px 0px;
+    background: #3e606f
+}
+
+.container.content .menu .card .card-header h2 {
+    color: white;
+}
+
+.container.content .menu .card .card-content a {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border-bottom: 1px solid #e4e1e1;
+    color: #444;
+}
+
+.container.content .menu .card .card-content a:hover {
+    padding-left: 20px;
+    background: #f9f9f9;
+    transition: .1s;
+}
+
+.container.content .action {
+    width: 35%;
+    float: left;
+    text-align: center;
+}
+
+.container.content .action form {
+    width: 90%;
+}
+
+.container.content .action .page-title {
+    margin: 25px;
+}
+
+.container.content .action.create-post-div {
+    width: 80%;
+}
+/* table div (this should display the records from the database) */
+.table-div {
+    float: left;
+    width: 47%;
+}
+
+.table-div .message {
+    float: left;
+    width: 47%;
+}
+
+.table-div table {
+    width: 90%;
+}
+
+.table-div a.fa {
+    color: white;
+    padding: 3px;
+}
+
+.table-div .edit {
+    background: #004220;
+}
+
+.table-div .delete {
+    background: #f70e1A;
+}
+
+.table-div .publish {
+    background: red;
+}
+
+.table-div .unpublish {
+    background: green;
+}
+
+/* styling for validating errors, or so I guess */
+.message {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    color: #a94442;
+    background: #f2dede;
+    border: 1px solid #a94442;
+    margin-bottom: 20px;
+}
+
+.validation_errors p {
+    text-align: left;
+    margin-left: 10px;
+}

@@ -59,4 +59,30 @@ function makeSlug(String $string) {
     $slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
     return $slug;
 }
+
+// admin user functions downwards
+function createAdmin($request_values){
+    global $conn, $errors, $role, $username, $email;
+    $username = esc($request_values['username']);
+    $email = esc($request_values['email']);
+    $password = esc($request_values['password']);
+    $passwordConfirmation = esc($request_values['passwordConfirmation']);
+
+    if(isset($request_values['role'])){
+        $role = esc($request_values['role']);
+    }
+
+    // form validation ensure that the form is correctly filled
+    if (empty($username)) {
+        array_push($errors, "Invalid Username");
+    }
+    if (empty($email)) {
+        array_push($errors, "Invalid Email");
+    }
+    if (empty($password)) {
+        array_push($errors, "Wrong Password");
+    }
+}
+
+
 ?>
