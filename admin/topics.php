@@ -48,10 +48,22 @@
                     <?php foreach ($topics as $key => $topic): ?>
                         <tr>
                             <td><?php echo $key + 1; ?></td>
-                            
+                            <td><?php echo $topic['name']; ?></td>
+                            <td>
+                                <a class="fa fa-pencil btn edit" 
+                                href="topics.php?edit-topic=<?php echo $topic['id'] ?>"></a>
+                            </td>
+                            <td>
+                                <a class="fa fa-trash btn delete"
+                                href="topics.php?delete-topic=<?php echo $topic['id'] ?>"></a>
+                            </td>
                         </tr>
+                    <?php endforeach ?>
                     </tbody>
                 </table>
+            <?php endif ?>
         </div>
+
     </div>
 </body>
+</html>
